@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(){
+	pid_t pid;
+	pid=fork();
+	switch(pid)
+	{
+	case -1:
+		printf("erreur\n");return -1;
+	case 0:
+		printf("Je suis le fils,mon numéro est %d\n",getpid());return 0;
+	default:
+		printf("Je suis le pére,le numéro de mon fils est %d\n",pid);
+
+	}
+	return 0;
+}
+/*
+void main(){
+	int pid;
+	printf("Hello world\n");
+	pid=fork();
+	if (pid==0){printf("je suis le fils mon pid est %d,mon pere est %d\n",getpid(),getppid());
+				system("ps");}
+
+	else
+		printf("je suis le pere,le numero de mon fils est %d\n",pid);
+
+}
+
+int main(){
+	int pid,i;
+	for (int i = 0; i < 3; i++)
+	{
+		pid=fork();
+		if (pid==0){printf("je suis le fils mon pid est %d,mon pere est %d\n",getpid(),getppid());}
+
+		else
+		{
+			if (pid>0)
+			{
+				printf("je suis le pere mon numéro est %d le numero de mon fils est %d \n",getpid(),pid);
+
+			}
+			else printf("erreur");
+		}
+	
+	}
+}
+
+int main(){
+	fork()&&fork()&&fork();
+	printf("num %d,pére %d\n",getpid(),getppid());
+	while(wait(0)>0);
+	return 0;
+}
+
+int main(){
+	fork()||fork()||fork();
+	printf("num %d,pére %d\n",getpid(),getppid());
+	while(wait(0)>0);
+	return 0;
+}
+int main(){
+	int pid,i;
+	for (int i = 0; i < 3; i++)
+	{
+		pid=fork();
+		if (pid==0){printf("je suis le fils mon pid est %d,mon pere est %d\n",getpid(),getppid());}
+
+		else
+		{
+			if (pid>0)
+			{
+				printf("je suis le pere mon numéro est %d le numero de mon fils est %d \n",getpid(),pid);
+
+			}
+			else printf("erreur");while(wait(0)>0);
+		}
+	
+	}
+}
+*/

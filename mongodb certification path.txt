@@ -1,0 +1,64 @@
+Unit 01:Intro to MongoDB (15 Minutes)
+
+Unit 02:MongoDB Atlas (1 Hour)
+
+Unit 03:MongoDB and the Document Model (1.25 Hours) 
+The MongoDB Document Model
+Managing Databases, Collections, and Documents in Atlas Data Explorer
+
+Unit 04:MongoDB Data Modeling Intro (45 Minutes)
+Different types of relationships
+Differences between embedding and referencing
+Learn how to scale your data model and use Atlas Tools for schema help
+
+Unit 05: Connecting to a MongoDB Database (1 Hour)
+Connecting to MongoDB in Node.js
+Connection string to connect your Atlas cluster with the shell, Compass, and any type of application
+
+Unit 06: Connecting to a MongoDB Database with Nodejs (1 Hour)
+Lear how connect to your Node.js applications. 
+How to use the Yarn package manager to install the Node.js MongoDB driver.
+
+Unit 07: MongoDB CRUD Operations: Insert and Find Documents (1.75 Hour)
+Inserting and finding documents.
+Build your own queries that use comparison and logical operators
+How to query elements in an array
+
+Unit 08: MongoDB CRUD Operations: Replace and Delete Documents (1.75 Hour)
+Replace entire documents, update individual fields in a document, insert new documents, and remove documents from a database.
+Using updateOne(), findAndModify() and updateMany()
+
+Unit 09: MongoDB CRUD Operations: Modifying Query Results (1.25 Hour)
+How to modify query results in MongoDB 
+Using sorts, limits, projections, and counts. 
+Returning Specific Data from a Query in MongoDB
+
+Unit 10: MongoDB CRUD Operations in Node.js (2 Hour)
+Learn how BSON documents are expressed in Node.js. 
+Learn how to insert, query and retrieve, update, and delete documents in a Node.js application. 
+Learn how to create a multi-document transaction.
+
+Unit 11: MongoDB Aggregation (1.75 Hour)
+Aggregation Pipeline in Node.js Applications
+Aggregation Stages with Node.js: $match, $group,$sort,$out and $project
+
+Unit 12: MongoDB Indexes (1.25 Hour)
+How to create Single Field and Compound Index, 
+What Multikey indexes are, and how to see if queries are using indexes. 
+Learn how to delete an index.
+
+Unit 13: MongoDB Atlas Search (1.5 Hour)
+Learn how to get started with Atlas Search 
+Add search functionality to your application
+Creating a Search Index with Dynamic Field Mapping
+Creating a Search Index with Static Field Mapping
+Using $search and Compound Operators
+Grouping Search Results by Using Facets
+
+Unit 14: MongoDB Transactions (1 Hour)
+ACID transactions in MongoDB
+Lear how to Use Transactions in MongoDB
+
+Unit 15:MongoDB Compass (20 Minutes) 
+
+Unit 16:MongoDB VS Code Extension (20 Minutes) 
